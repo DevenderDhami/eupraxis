@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { CMP_TITLE } from "@/app/lib/constants";
+import Logo from "../common/logo";
 
 interface ProductLink {
   name: string;
@@ -76,9 +77,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 py-5 gap-y-10 sm:grid-cols-6 lg:grid-cols-12">
           <div className="sm:col-span-6 lg:col-span-5">
             <div className="flex flex-shrink-0 items-center border-right">
-              <Link href="/" className="text-3xl font-bold">
-                {CMP_TITLE}
-              </Link>
+              <div className="bg-white p-1 px-4 opacity-90 rounded-lg">
+              <Logo />
+              </div>
             </div>
             <h3 className="text-xs font-medium lh-160 mt-5 mb-4 lg:mb-16 pr-10">
               {CMP_TITLE} is dedicated to empowering learners by offering

@@ -8,6 +8,7 @@ import Drawer from "./Drawer";
 import { CMP_TITLE } from "@/app/lib/constants";
 import { NavMenu } from "@/app/data/navMenu";
 import DrawerData from "./Drawerdata";
+import Logo from "../common/logo";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -48,12 +49,10 @@ const Navbar = () => {
   return (
     <Disclosure as="nav" className="navbar">
       <div className="container mx-auto px-4 py-4 lg:px-8 ">
-        <div className="relative flex h-10 md:h-10 items-center justify-between">
+        <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-row justify-between w-full">
             <div>
-              <Link href="/" className="text-3xl font-bold theme-clr">
-                {CMP_TITLE}
-              </Link>
+              <Logo/>
             </div>
 
             <div className="hidden w-4/5 lg:block m-auto text-end">
